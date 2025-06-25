@@ -1,0 +1,52 @@
+.novedades {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff7f0;
+}
+
+.icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.icono span {
+  display: inline-block;
+  background-color: #ff6b35;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2a2a2a;
+  margin: 0;
+}
+
+.descripcion {
+  color: #6e6e6e;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.boton {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #4980ff, #8850ff);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+

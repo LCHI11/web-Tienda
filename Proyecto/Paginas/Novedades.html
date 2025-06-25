@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades</title>
+     <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous" 
+  />
+
+  <link rel="stylesheet" href="../Css/Header.css" />
+  <link rel="stylesheet" href="../Css/Novedades.css" />
+  <link rel="stylesheet" href="../Css/Categorias.css" />
+  <link rel="stylesheet" href="../Css/Footer.css" />
+
+</head>
+
+<body>
+    <header>
+  
+  <!-- Menu -->
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../Imagen/logo.png" class="LogoHeader" alt="Logo El Bastión Literario" class="me-2" />
+                <span>El Bastión Literario</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between contenedor-header" id="menu">
+                <!-- Menú principal -->
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link active" href="../Paginas/Inicio.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Categorias.html">Categorías</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Bestsellers.html">Bestsellers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Ofertas.html">Ofertas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Novedades.html">Novedades</a></li>
+
+                <!--Submenú -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarContacto" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contacto
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarContacto">
+                    <li><a class="dropdown-item" href="../Paginas/Contacto.html#nosotros">Sobre nosotros</a></li>
+                    <li><a class="dropdown-item" href="../Paginas/Contacto.html#Contactenos">Contáctanos</a></li>
+                    <li><a class="dropdown-item" href="../Paginas/Contacto.html#recomendaciones">Recomiéndanos un libro</a></li>
+                    </ul>
+                </li>
+                </ul>
+
+                <!-- Carrito -->
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Paginas/Compras.html" >
+                    <img src="../Imagen/Carrito.png "  class="Carrito" alt="Carrito de compras" />
+                    </a>
+                </li>
+                </ul>
+
+            </div>
+            </div>
+        </nav>
+    </header>
+<main>
+
+  <section class="novedades">
+    <div class="icono">
+      <span>➕</span>
+      <h2 class="titulo">Novedades Literarias</h2>
+    </div>
+    <p class="descripcion">
+      Descubre los lanzamientos más recientes y sumérgete en nuevas historias
+      que están conquistando el mundo literario.
+    </p>
+    <a href="#" class="boton">
+      📚 ¡Recién Llegados!
+    </a>
+  </section>
+
+  <div class="container my-5">
+
+    <!-- Fila única con 4 columnas -->
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-4">
+        
+        <!-- Tarjeta 1 -->
+        <div class="col">
+        <div class="card libro-card">
+            <img src="../Imagen/Categorias/Novedades/El plan Maestro.jpg" class="imagenlibros" alt="El plan maestro">
+            <div class="card-body text-center">
+            <h6 class="libro-titulo">El plan maestro</h6>
+            <p class="libro-autor">Javier Sierra</p>
+            <p class="libro-rating">★★★★☆ <span class="text-muted">4.5</span></p>
+            <p class="libro-precio">S/20.99</p>
+            <a href="#" class="btn btn-warning btn-sm mt-2 w-100">Comprar</a>
+            </div>
+        </div>
+        </div>
+    <!-- Tarjeta 2 -->
+    <div class="col">
+      <div class="card libro-card">
+        <img src="../Imagen/Categorias/Novedades/Los hijos de adan.jpg" class="imagenlibros" alt="Los Hijos de Adán">
+        <div class="card-body text-center">
+          <h6 class="libro-titulo">Los Hijos de Adán</h6>
+          <p class="libro-autor">Eva García Sáenz</p>
+          <p class="libro-rating">★★★★★ <span class="text-muted">4.8</span></p>
+          <p class="libro-precio">S/18.99</p>
+          <a href="#" class="btn btn-warning btn-sm mt-2 w-100">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+       <!-- Tarjeta 3 -->
+    <div class="col">
+      <div class="card libro-card">
+        <img src="../Imagen/Categorias/Novedades/alas de onix.jpg" class="imagenlibros" alt="Alas de ónix">
+        <div class="card-body text-center">
+          <h6 class="libro-titulo">Alas de ónix</h6>
+          <p class="libro-autor">Rebecca Yarros</p>
+          <p class="libro-rating">★★★★☆ <span class="text-muted">4.5</span></p>
+          <p class="libro-precio">S/19.99</p>
+          <a href="#" class="btn btn-warning btn-sm mt-2 w-100">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="col">
+      <div class="card libro-card">
+        <img src="../Imagen/Categorias/Novedades/Los nombres de Felipa.avif" class="imagenlibros" alt="Los nombres de Feliza ">
+        <div class="card-body text-center">
+          <h6 class="libro-titulo">Los nombres de Feliza </h6>
+          <p class="libro-autor">Juan Gabriel Vásquez</p>
+          <p class="libro-rating">★★★★☆ <span class="text-muted">4.5</span></p>
+          <p class="libro-precio">S17.99</p>
+          <a href="#" class="btn btn-warning btn-sm mt-2 w-100">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+       <!-- Tarjeta 5 -->
+    <div class="col">
+      <div class="card libro-card">
+        <img src="../Imagen/Categorias/Novedades/Albatroz.jpg" class="imagenlibros" alt="El albatros negro">
+        <div class="card-body text-center">
+          <h6 class="libro-titulo">El albatros negro</h6>
+          <p class="libro-autor">María Oruña</p>
+          <p class="libro-rating">★★★★★ <span class="text-muted">4.8</span></p>
+          <p class="libro-precio">S/18.99</p>
+          <a href="#" class="btn btn-warning btn-sm mt-2 w-100">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+      <!-- Tarjeta 6 -->
+    <div class="col">
+      <div class="card libro-card">
+        <img src="../Imagen/Categorias/Novedades/Amanecer en la cosecha.jpg" class="imagenlibros" alt="Amanecer en la cosecha">
+        <div class="card-body text-center">
+          <h6 class="libro-titulo">Amanecer en la cosecha</h6>
+          <p class="libro-autor">Suzanne Collins</p>
+          <p class="libro-rating">★★★★★ <span class="text-muted">4.6</span></p>
+          <p class="libro-precio">S/23.79</p>
+          <a href="#" class="btn btn-warning btn-sm mt-2 w-100">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Tarjeta 7 -->
+    <div class="col">
+      <div class="card libro-card">
+        <img src="../Imagen/Categorias/Novedades/La Humanidad esta en juevo.webp" class="imagenlibros" alt="Animales difíciles">
+        <div class="card-body text-center">
+          <h6 class="libro-titulo">Animales difíciles</h6>
+          <p class="libro-autor"> William Gibson</p>
+          <p class="libro-rating">★★★★☆ <span class="text-muted">4.6</span></p>
+          <p class="libro-precio">S/17.99</p>
+          <a href="#" class="btn btn-warning btn-sm mt-2 w-100">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+        <!-- Tarjeta 8-->
+    <div class="col">
+      <div class="card libro-card">
+        <img src="../Imagen/Categorias/Novedades/Emilia del Valle.jpg" class="imagenlibros" alt="Mi nombre es Emilia del Valle">
+        <div class="card-body text-center">
+          <h6 class="libro-titulo">Mi nombre es Emilia del Valle</h6>
+          <p class="libro-autor">Isabel Allende</p>
+          <p class="libro-rating">★★★★★ <span class="text-muted">4.8</span></p>
+          <p class="libro-precio">S/12.99</p>
+          <a href="#" class="btn btn-warning btn-sm mt-2 w-100">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ </div>
+
+</main>
+
+<footer class="pie-de-pagina text-white py-5">
+    <div class="contenedor">
+      <div class="fila">
+
+        <!-- Marca -->
+        <div class="columna">
+          <div class="marca">
+            <img src="../Imagen/logo.png" alt="Logo"  class="me-2 logo">
+            <h6 class="titulo-marca">El Bastión Literario</h6>
+          </div>
+          <p class="texto-pequeno">Tu librería virtual de confianza.</p>
+          <p class="texto-pequeno">Miles de libros al alcance de un clic.</p>
+        </div>
+
+  <!-- Categorías -->
+        <div class="columna">
+          <h6 class="titulo-seccion">Categorías</h6>
+          <ul class="lista-footer">
+            <li><a href="../Paginas/Categorias.html#ficcion" class="enlace-footer">Ciencia Ficción</a></li>
+            <li><a href="../Paginas/Categorias.html#romance" class="enlace-footer">Romance</a></li>
+            <li><a href="../Paginas/Categorias.html#misterio" class="enlace-footer">Misterio</a></li>
+            <li><a href="../Paginas/Categorias.html#historico" class="enlace-footer">Historico</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div class="columna">
+          <h6 class="titulo-seccion">Contacto</h6>
+          <ul class="lista-footer">
+            <li><a href="../Paginas/Contacto.html#nosotros" class="enlace-footer">Nuestro Equipo</a></li>
+            <li><a href="../Paginas/Contacto.html#nosotros" class="enlace-footer">Acerca de nosotros</a></li>
+            <li><a href="../Paginas/Contacto.html#Contactenos" class="enlace-footer">Contáctenos</a></li>
+          </ul>
+        </div>
+
+        <!-- Ofertas -->
+        <div class="columna">
+          <h6><a href="../Paginas/Ofertas.html" class="enlace-footer titulo-seccion">Ofertas</a></h6>
+        </div>
+
+      </div>
+      
+      <!-- Derechos reservados -->
+      <hr class="separador">
+      <div class="texto-derechos">
+        © 2025 El Bastión Literario. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+<!-- Bootstrap Bundle JS -->
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+  crossorigin="anonymous">
+</script>
+
+</body>
+</html>

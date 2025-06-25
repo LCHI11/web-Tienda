@@ -1,0 +1,33 @@
+body {
+  background-color: #FFF7ED;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+
+}
+
+.oferta-titulo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.oferta-subtitulo {
+  color: #6c757d;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* Botón con degradado */
+.btn-descuento {
+width: 500px;
+  display: inline-block;
+  background: linear-gradient(to right, #f44369, #e91e63);
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  font-size: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}

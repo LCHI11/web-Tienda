@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous" 
+  />
+
+  <link rel="stylesheet" href="../Css/Header.css" />
+  <link rel="stylesheet" href="../Css/Contacto.css" />
+  <link rel="stylesheet" href="../Css/Footer.css" />
+
+</head>
+<body >
+<header>
+  
+  <!-- Menu -->
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../Imagen/logo.png" class="LogoHeader" alt="Logo El Bastión Literario" class="me-2" />
+                <span>El Bastión Literario</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between contenedor-header" id="menu">
+                <!-- Menú principal -->
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link active" href="../Paginas/Inicio.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Categorias.html">Categorías</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Bestsellers.html">Bestsellers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Ofertas.html">Ofertas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Novedades.html">Novedades</a></li>
+
+                <!--Submenú -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarContacto" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contacto
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarContacto">
+                    <li><a class="dropdown-item" href="../Paginas/Contacto.html#nosotros">Sobre nosotros</a></li>
+                    <li><a class="dropdown-item" href="../Paginas/Contacto.html#Contactenos">Contáctanos</a></li>
+                    <li><a class="dropdown-item" href="../Paginas/Contacto.html#recomendaciones">Recomiéndanos un libro</a></li>
+                    </ul>
+                </li>
+                </ul>
+
+                <!-- Carrito -->
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Paginas/Compras.html" >
+                    <img src="../Imagen/Carrito.png "  class="Carrito" alt="Carrito de compras" />
+                    </a>
+                </li>
+                </ul>
+
+            </div>
+            </div>
+        </nav>
+</header>
+
+<main>
+  <section class="container py-5">
+
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Contacto</h2>
+      <p class="text-muted">
+        Estamos aquí para ayudarte. Contáctanos, conoce más sobre nosotros o comparte tus recomendaciones literarias.
+      </p>
+    </div>
+
+    <!-- Sobre El Bastión Literario -->
+    <div class="bg-white rounded-4 shadow-sm p-4 mb-5 text-center">
+      <div id="Nosotros" class="bg-warning text-white fw-bold py-2 rounded mb-3">
+        Sobre El Bastión Literario
+      </div>
+      <p>
+        Somos una biblioteca virtual dedicada a acercar miles de libros a tus manos, donde sea que te encuentres.
+        Ofrecemos una amplia colección de géneros, desde clásicos hasta novedades, para que encuentres siempre tu próxima lectura favorita.
+      </p>
+      <p>
+        Nuestro compromiso es crear una comunidad de lectores apasionados, brindando acceso fácil y rápido a literatura de calidad, con la mejor experiencia de compra online.
+      </p>
+      <div class="d-flex justify-content-center gap-5 mt-4 text-secondary fw-semibold estadisticas">
+        <div><span class="text-warning fs-5 fw-bold">10K+</span><br>Libros Disponibles</div>
+        <div><span class="text-warning fs-5 fw-bold">50K+</span><br>Lectores Satisfechos</div>
+        <div><span class="text-warning fs-5 fw-bold">5★</span><br>Calificación Promedio</div>
+      </div>
+    </div>
+
+    <!-- Formularios -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- Contacto -->
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm rounded-4">
+          <div class="card-header bg-warning-subtle text-dark fw-bold rounded-top-4 d-flex align-items-center gap-2">
+            💬 <span id="Contactenos">Contáctanos</span>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Nombre de Usuario</label>
+                <input type="text" class="form-control" placeholder="Tu nombre completo">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" placeholder="tu@email.com">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Mensaje</label>
+                <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning fw-bold w-100">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recomendación -->
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm rounded-4">
+          <div id="recomendaciones" class="card-header bg-warning-subtle text-dark fw-bold rounded-top-4 d-flex align-items-center gap-2">
+            📚 <span >Recomiéndanos un Libro</span>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Nombre de Usuario</label>
+                <input type="text" class="form-control" placeholder="Tu nombre completo">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" placeholder="tu@email.com">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Recomendación de Libro</label>
+                <textarea class="form-control" rows="4" placeholder="Comparte tu recomendación..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning fw-bold w-100">Enviar Recomendación</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+<footer class="pie-de-pagina text-white py-5">
+    <div class="contenedor">
+      <div class="fila">
+
+        <!-- Marca -->
+        <div class="columna">
+          <div class="marca">
+            <img src="../Imagen/logo.png" alt="Logo"  class="me-2 logo">
+            <h6 class="titulo-marca">El Bastión Literario</h6>
+          </div>
+          <p class="texto-pequeno">Tu librería virtual de confianza.</p>
+          <p class="texto-pequeno">Miles de libros al alcance de un clic.</p>
+        </div>
+
+ <!-- Categorías -->
+        <div class="columna">
+          <h6 class="titulo-seccion">Categorías</h6>
+          <ul class="lista-footer">
+            <li><a href="../Paginas/Categorias.html#ficcion" class="enlace-footer">Ciencia Ficción</a></li>
+            <li><a href="../Paginas/Categorias.html#romance" class="enlace-footer">Romance</a></li>
+            <li><a href="../Paginas/Categorias.html#misterio" class="enlace-footer">Misterio</a></li>
+            <li><a href="../Paginas/Categorias.html#historico" class="enlace-footer">Historico</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div class="columna">
+          <h6 class="titulo-seccion">Contacto</h6>
+          <ul class="lista-footer">
+            <li><a href="../Paginas/Contacto.html#nosotros" class="enlace-footer">Nuestro Equipo</a></li>
+            <li><a href="../Paginas/Contacto.html#nosotros" class="enlace-footer">Acerca de nosotros</a></li>
+            <li><a href="../Paginas/Contacto.html#Contactenos" class="enlace-footer">Contáctenos</a></li>
+          </ul>
+        </div>
+
+        <!-- Ofertas -->
+        <div class="columna">
+          <h6><a href="../Paginas/Ofertas.html" class="enlace-footer titulo-seccion">Ofertas</a></h6>
+        </div>
+
+      </div>
+      <!-- Derechos reservados -->
+      <hr class="separador">
+      <div class="texto-derechos">
+        © 2025 El Bastión Literario. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap Bundle JS -->
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+  crossorigin="anonymous">
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* === Fondo general === */
+body, .bg-custom {
+  background-color: #FFF7ED;
+}
+
+/* === Colores personalizados === */
+.bg-orange {
+  background-color: #ff7a00;
+}
+
+.btn-orange {
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-orange:hover {
+  background-color: #e86900;
+}
+
+/* === Miniaturas === */
+.img-thumb {
+  width: 50px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* === Alineación precisa de filas del carrito === */
+.list-group-item {
+  display: grid !important;
+  grid-template-columns: 1fr 110px 80px 40px; /* Producto | cantidad | precio | icono */
+  align-items: center;
+  gap: 1rem;
+}
+
+/* === Cantidad uniforme === */
+.list-group-item .d-flex.align-items-center.gap-2 {
+  justify-content: center;
+  min-width: 110px;
+}
+
+.list-group-item .d-flex.align-items-center.gap-2 .btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-group-item .d-flex.align-items-center.gap-2 span {
+  display: inline-block;
+  width: 22px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Precio alineado uniformemente */
+.list-group-item .fw-semibold {
+  text-align: right;
+}
+
+/* Icono de borrar */
+.list-group-item .btn-link {
+  text-align: center;
+  padding: 0;
+}

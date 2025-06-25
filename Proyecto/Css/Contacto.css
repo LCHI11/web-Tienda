@@ -1,0 +1,30 @@
+body {
+  background-color: #FFF7ED;
+}
+
+section.container {
+  background-color: #FFF7ED;
+}
+
+
+.estadisticas div {
+  text-align: center;
+  font-size: 14px;
+}
+
+.estadisticas span {
+  font-size: 20px;
+}
+
+.card-header {
+  font-size: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+}
+
+.form-control::placeholder {
+  color: #b0b0b0;
+  font-style: italic;
+}

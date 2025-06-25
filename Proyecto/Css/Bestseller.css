@@ -1,0 +1,20 @@
+body {
+  background-color: #FFF7ED;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.ImagenBestseller{
+    width: 50px;
+    height: 50px;
+}
+.Bestseller{
+    margin-top: 40px;
+    text-align: center;
+}
+

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+     <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous" 
+  />
+
+    <!-- Bootstrap Icons (para el icono del tacho) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../Css/Header.css" />
+  <link rel="stylesheet" href="../Css/Compras.css" />
+  <link rel="stylesheet" href="../Css/Footer.css" />
+</head>
+
+<body>
+    <header>
+  
+  <!-- Menu -->
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../Imagen/logo.png" class="LogoHeader" alt="Logo El Bastión Literario" class="me-2" />
+                <span>El Bastión Literario</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between contenedor-header" id="menu">
+                <!-- Menú principal -->
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link active" href="../Paginas/Inicio.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Categorias.html">Categorías</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Bestsellers.html">Bestsellers</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Ofertas.html">Ofertas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../Paginas/Novedades.html">Novedades</a></li>
+
+                <!--Submenú -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarContacto" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contacto
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarContacto">
+                    <li><a class="dropdown-item" href="../Paginas/Contacto.html#nosotros">Sobre nosotros</a></li>
+                    <li><a class="dropdown-item" href="../Paginas/Contacto.html#Contactenos">Contáctanos</a></li>
+                    <li><a class="dropdown-item" href="../Paginas/Contacto.html#recomendaciones">Recomiéndanos un libro</a></li>
+                    </ul>
+                </li>
+                </ul>
+
+                <!-- Carrito -->
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Paginas/Compras.html" >
+                    <img src="../Imagen/Carrito.png " class="Carrito" alt="Carrito de compras" />
+                    </a>
+                </li>
+                </ul>
+
+            </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    
+
+  <div class="container py-5">
+    <!-- Título -->
+    <div class="text-center mb-4">
+      <div class="fs-4">🛒</div>
+      <h2 class="fw-bold">Tu Carrito de Compras</h2>
+      <p class="text-muted">Tienes 4 libros en tu carrito</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Lista de productos -->
+      <div class="col-lg-8">
+        <div class="bg-white rounded-4 shadow-sm">
+          <div class="bg-orange text-white fw-bold px-4 py-2 rounded-top-4">
+            Productos en tu Carrito
+          </div>
+          <ul class="list-group list-group-flush">
+            <!-- Producto 1 -->
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <img src="../Imagen/Categorias/Ficcion/dune.jpg" alt="Dune" class="img-thumb">
+                <div class="ms-3">
+                  <div class="fw-bold">Dune</div>
+                  <small class="text-muted">Frank Herbert</small><br>
+                  <span class="text-danger fw-semibold">$18.99</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-outline-secondary btn-sm">−</button>
+                <span>1</span>
+                <button class="btn btn-outline-secondary btn-sm">+</button>
+              </div>
+              <div class="fw-semibold">$18.99</div>
+              <button class="btn btn-sm btn-link text-danger btn-remove"><i class="bi bi-trash"></i></button>
+            </li>
+
+            <!-- Producto 2 -->
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <img src="../Imagen/Categorias/Ficcion/Fundacion.jpg" alt="Fundación" class="img-thumb">
+                <div class="ms-3">
+                  <div class="fw-bold">Fundación</div>
+                  <small class="text-muted">Isaac Asimov</small><br>
+                  <span class="text-danger fw-semibold">$16.75</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-outline-secondary btn-sm">−</button>
+                <span>2</span>
+                <button class="btn btn-outline-secondary btn-sm">+</button>
+              </div>
+              <div class="fw-semibold">$33.50</div>
+              <button class="btn btn-sm btn-link text-danger"><i class="bi bi-trash"></i></button>
+            </li>
+
+            <!-- Producto 3 -->
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <img src="../Imagen/Categorias/Ficcion/Neuromate.jpg" alt="Nombre del Viento" class="img-thumb">
+                <div class="ms-3">
+                  <div class="fw-bold">Neuromante</div>
+                  <small class="text-muted">William Gibson</small><br>
+                  <span class="text-danger fw-semibold">$24.99</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-outline-secondary btn-sm">−</button>
+                <span>1</span>
+                <button class="btn btn-outline-secondary btn-sm">+</button>
+              </div>
+              <div class="fw-semibold">$24.99</div>
+              <button class="btn btn-sm btn-link text-danger"><i class="bi bi-trash"></i></button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Botón Seguir Comprando -->
+        <div class="mt-4">
+          <a href="#" class="btn btn-warning w-100 fw-bold">← Seguir Comprando</a>
+        </div>
+      </div>
+
+      <!-- Resumen de compra -->
+      <div class="col-lg-4">
+        <div class="bg-white rounded-4 shadow-sm p-3">
+          <div class="bg-warning text-dark fw-bold p-2 rounded mb-3">Resumen de Compra</div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>Subtotal:</span>
+            <span>$77.48</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>Impuestos (10%):</span>
+            <span>$7.75</span>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between fw-bold fs-5 text-danger mb-3">
+            <span>Total:</span>
+            <span>$85.23</span>
+          </div>
+          <button class="btn btn-orange w-100 mb-2 fw-bold">🛒 Proceder al Pago</button>
+          <small class="text-muted d-block text-center">Pago seguro y protegido<br>Aceptamos todas las tarjetas principales</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</main>
+
+<footer class="pie-de-pagina text-white py-5">
+    <div class="contenedor">
+      <div class="fila">
+
+        <!-- Marca -->
+        <div class="columna">
+          <div class="marca">
+            <img src="../Imagen/logo.png" alt="Logo"  class="me-2 logo">
+            <h6 class="titulo-marca">El Bastión Literario</h6>
+          </div>
+          <p class="texto-pequeno">Tu librería virtual de confianza.</p>
+          <p class="texto-pequeno">Miles de libros al alcance de un clic.</p>
+        </div>
+
+        <!-- Categorías -->
+        <div class="columna">
+          <h6 class="titulo-seccion">Categorías</h6>
+          <ul class="lista-footer">
+            <li><a href="#" class="enlace-footer">Ciencia Ficción</a></li>
+            <li><a href="#" class="enlace-footer">Romance</a></li>
+            <li><a href="#" class="enlace-footer">Misterio</a></li>
+            <li><a href="#" class="enlace-footer">Historia</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div class="columna">
+          <h6 class="titulo-seccion">Contacto</h6>
+          <ul class="lista-footer">
+            <li><a href="#" class="enlace-footer">Nuestro Equipo</a></li>
+            <li><a href="#" class="enlace-footer">Acerca de nosotros</a></li>
+            <li><a href="#" class="enlace-footer">Contáctenos</a></li>
+          </ul>
+        </div>
+
+        <!-- Ofertas -->
+        <div class="columna">
+          <h6 class="titulo-seccion">Ofertas</h6>
+        </div>
+
+      </div>
+
+      <!-- Derechos reservados -->
+      <hr class="separador">
+      <div class="texto-derechos">
+        © 2025 El Bastión Literario. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+<!-- Bootstrap Bundle JS -->
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+  crossorigin="anonymous">
+</script>
+<script src="Script/Compras.js"></script>
+</body>
+</html>

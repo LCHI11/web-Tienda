@@ -1,0 +1,148 @@
+body {
+  background-color: #FFF7ED;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Centrado del contenedor */
+.carrusel{
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+/* Tarjeta principal con fondo degradado */
+.tarjetas {
+  background: linear-gradient(to bottom, #fdbb74, #fef08a);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes del carrusel para alinear todo */
+.carousel-inner {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.Bestseller{
+  display: inline-block;
+  background-color: #ffc107; /* color de fondo amarillo */
+  color: #212529;            /* color de texto oscuro */
+  margin-bottom: 8px;        /* margen inferior */
+  padding: 4px 12px;         /* relleno: 4px arriba/abajo, 12px izquierda/derecha */
+  font-weight: 700;          /* texto en negrita */
+  border-radius: 4px;        /* bordes redondeados */
+  font-size: 14px;           /* tamaño de fuente */
+}
+
+/* Contenedor de cada slide, limitado al área entre las flechas */
+.contenido-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: calc(100% - 6rem); /* Espacio útil descontando el ancho de las flechas */
+  max-width: 700px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.valoracion {
+  color: #ffc107;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.resenas {
+  color: #6c757d;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* Texto del slide - movido a la derecha para evitar la flecha izquierda */
+.slide-texto {
+  flex: 1 1 50%;
+  min-width: 280px;
+  padding-left: 50px /* 👈 Esto evita que el texto toque la flecha izquierda */
+}
+
+/* Imagen del libro */
+.libro-img {
+  max-height: 220px;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+  text-align: center;
+  font-weight: 700;  
+}
+
+/* Tarjeta más compacta */
+.libro-card {
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 470px; /* 🔽 reducido desde 400px */
+}
+
+.libro-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Imagen: misma anchura, menos alta (65% del nuevo alto ≈ 221px) */
+/* Imagen: ocupa el 65% del alto de la tarjeta */
+.imagenlibros {
+  width: 100%;
+  height: 65%;                /* 🔽 altura ajustada */
+  display: block;
+  background-color: #fff;
+  padding: 0;
+}
+
+/* Contenido ocupa el resto (35%) */
+.card-body {
+  height: 35%;
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilo del contenido */
+.libro-titulo {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  color: #333;
+}
+
+.libro-autor {
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-bottom: 0.15rem;
+}
+
+.libro-rating {
+  font-size: 0.75rem;
+  color: #ffc107;
+  margin-bottom: 0.15rem;
+}
+
+.libro-precio {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #dc3545;
+}
